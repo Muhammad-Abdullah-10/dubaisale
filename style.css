@@ -1,0 +1,395 @@
+
+/* fonts */
+@font-face {
+    font-family: forum;
+    src: url(fonts/forum-v16-latin_cyrillic-regular.woff2);
+  }
+  @font-face {
+    font-family: mont200;
+    src: url(fonts/montserrat-v25-latin_cyrillic-200.woff2);
+  }
+  @font-face {
+    font-family: mont300;
+    src: url(fonts/montserrat-v25-latin_cyrillic-300.woff2);
+  } 
+  @font-face {
+    font-family: mont500;
+    src: url(fonts/montserrat-v25-latin_cyrillic-500.woff2);
+  } 
+  @font-face {
+    font-family: mont600;
+    src: url(fonts/montserrat-v25-latin_cyrillic-600.woff2);
+  }  
+  @font-face {
+    font-family: montreg;
+    src: url(fonts/montserrat-v25-latin_cyrillic-regular.woff2);
+  }  
+/* fonts */
+
+.menu-container .nav-row{
+    height: 80px;
+    max-width: 1150px;
+    margin: auto;
+    /* stickty nav */
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    z-index: 1;
+    /* stickty nav */
+
+}
+.logo img{
+    max-width: 150px;
+    max-height: 60px;
+}
+.menu-container{
+    height: 100px;
+    background-color: #fff;
+    /* stickty nav */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* stickty nav */
+}
+.hidden-menu{
+    display: none;
+}
+.before-golden-number{
+    font-size: 23px;
+    line-height: 30px;
+    font-family: montreg , sans-serif;
+    font-weight: 300;
+    color: #6a6a6a;
+}
+#btn-menu{
+    font-size: 23px;
+    line-height: 30px;
+    font-family: montreg , sans-serif;
+    font-weight: 300;
+    color: #6a6a6a;
+}
+#golden-number{
+    font-size: 23px;
+    line-height: 30px;
+    font-family: montreg , sans-serif;
+    font-weight: 300;
+}
+.text-gradient{
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(-50.96%, #EEC8AA), color-stop(138.46%, #C7825B)); */
+    background: linear-gradient(180deg, #EEC8AA -50.96%, #C7825B 138.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.background-full-width .bg-banner{ 
+    min-height:100vh;
+    width: 100vw;
+    background: url(img/main-banner-bg.jpg);
+    background-position: center  center;
+    background-repeat: no-repeat ;
+    background-attachment: scroll;
+    background-size: cover;
+    max-width: 100% ;
+}
+/* .main-banner__bg-gradient {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.8)));
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    opacity: 0.5;
+} */
+
+
+.section-one-banner , .section-one-banner .row{
+    height: 90vh;
+    width: 100%;  
+}
+.section-one-banner , .section-one-banner .row .flex-column{
+    align-self: center;
+}
+.banner-heading{
+    font-family: forum;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 213px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+
+/* video btn */
+.video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    /* background: #fa183d; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    opacity: 0.2;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    opacity: 0.2;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button:hover:after {
+    background-color: darken(#fff, 10%);
+    background: 0.2;
+  }
+  
+  .video-play-button img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #fff;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.8);
+      opacity: 0;
+    }
+  }
+  .playbutton{
+    height: 150px;
+    width: 100%;
+  }
+  /* video btn */
+  
+  /* video overlay */
+  /* .video-overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.80);
+    opacity: 0;
+    transition: all ease 500ms;
+  }
+  
+  .video-overlay.open {
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+  }
+  
+  .video-overlay-close {
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  
+  .video-overlay-close:hover {
+    color: #fa183d;
+  }
+  
+  .video-overlay iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* width: 90%; */
+    /* height: auto; */
+   /* box-shadow: 0 0 15px rgba(0,0,0,0.75);
+  }*/
+  /* video overlay */
+ 
+  .watch-video{
+    font-size: 22px;
+    font-family: mont300;
+    color: #fff;
+    line-height: 300;
+  }
+  .city-in-city{
+    font-family: forum;
+    font-size: 70px;
+    line-height: 137%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 50px;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  .detail-city{
+    font-family: mont500;
+    width: 100%;
+    max-width: 618px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 132.8%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 103px;
+    opacity: 1;
+  }
+  
+  
+  .about {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8) );
+}
+  .about .row {
+    height: 70vh;
+    width: 100%;
+  }
+  .col-xl-12.about-numbers{
+    max-width: 750px;
+    margin: auto;
+  }
+  .col-xl-12.about-numbers, .about-numbers .col-xl-4 ,  .about-numbers .row{
+    max-height: 150px;
+    
+}
+  .about-numbers .row .col-xl-4{
+    align-self: center;
+    justify-content: center ;
+    max-width: 750px;
+  }
+  .about-numbers h3 , .about-numbers h6 {
+    text-align: center;
+    max-width: 250px;
+  }
+.numerbs-data-banner{
+   font-family: forum, serif;
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2px;
+    position: relative;
+    overflow: hidden;
+}
+.text-data-banner{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 145.3%;
+    color: #fff;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+  .key-features-area{
+    height: 200vh;
+    
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .key-heading{
+    font-family: forum , 'san-serif';
+    font-size: 90px;
+    line-height: 137%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  h3.text-gradient.key-heading {
+    margin-bottom: 30px;
+}
+  .key-image-left{
+  position: relative;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .box-img-border {
+    position: absolute;
+    min-width: 83%;
+    min-height: 83%;
+    bottom: -20px;
+    left: 0;
+    background-image: linear-gradient(132deg, #EEC8AA, #C7825B, #EEC8AA, #C7825B);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+    animation: gradient 10s ease infinite;
+}
+.box-img-border-r{
+    position: absolute;
+    min-width: 83%;
+    min-height: 83%;
+    bottom: -20px;
+    right:  0;
+    background-image: linear-gradient(132deg, #EEC8AA, #C7825B, #EEC8AA, #C7825B);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+    animation: gradient 10s ease infinite;
+}
+.key-detail-imgnext{
+    font-family: forum;
+    font-size: 44px;
+    text-align: center;
+    font-weight: 300;
+}

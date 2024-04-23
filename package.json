@@ -1,0 +1,22 @@
+{
+  "name": "dubai",
+  "version": "1.0.0",
+  "description": "Landing page Dubai Hills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-scss scss/main.scss build/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.6.0",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
+    "scrollmagic": "^2.0.8",
+    "scss": "^0.2.4",
+    "swiper": "^11.1.1"
+  }
+}
