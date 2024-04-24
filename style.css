@@ -342,7 +342,7 @@
   }
 
   .key-features-area{
-    height: 200vh;
+    min-height: 200vh;
     
     padding-left: 0px;
     padding-right: 0px;
@@ -393,3 +393,149 @@
     text-align: center;
     font-weight: 300;
 }
+
+/* descriptive area */
+.descriptive-area{
+  width: 100vw;
+  background: linear-gradient(166.78deg,#EEC8AA -12.91%,#C7825B 100.02%);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.descriptive-area .desc-heading{
+  font-family: forum , 'san-serif';
+  font-size: 54px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 30px;
+  max-width: 900px;
+}
+/* .image-desc-right{
+  position: absolute;
+  top: 70%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 1;
+} */
+.sec-decs-points{
+  max-width: 550px;
+}
+
+.icon-desc i {
+  color: #fff;
+  padding-right: 20px;
+}
+.icon-desc{
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  font-family: mont300;
+  color: #fff;
+}
+.form-banner{
+  padding:50px;
+  background-color: #fff;
+}
+.heading-form-desc h6{
+  font-family: forum;
+  font-weight: 400;
+    font-size: 26px;
+    line-height: 108%;
+    text-transform: uppercase;
+    color: #414141;
+    text-align: center;
+    margin-bottom: 20px;
+  
+}
+
+.form-control{
+  display: block;
+  width: 100%;
+  font-family: forum;
+  padding: 11px 15px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.143;
+  color: #414141;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 2px;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #e3c1ad;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(199,130,91,0.25);
+  box-shadow: 0 0 0 0.25rem rgba(199,130,91,0.25);
+}
+.download-brochure-form__btn{
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 11px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  line-height: 23px;
+  padding: 14.5px 15px;
+}
+.btn-gradient {
+  border: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEC8AA), color-stop(#C7825B), color-stop(#EEC8AA), to(#C7825B));
+  background: linear-gradient(180deg, #EEC8AA, #C7825B, #EEC8AA, #C7825B);
+  background-size: 100% 400%;
+  -webkit-transition: background-position 1.6s cubic-bezier(0.4,0,0,1);
+  transition: background-position 1.6s cubic-bezier(0.4,0,0,1);
+  color: #fff;
+}
+
+
+.download-brochure-form__ann {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #A0A0A0;
+  text-align: center;
+}
+.padding-left-90{
+padding-left: 90px;
+}
+.padding-bottom-55{
+  padding-bottom: 55px;
+}
+.form-wrapper .form-banner{
+  max-width: 420px;
+}
+
+.form-wrapper .form-banner .form-group input{
+  padding: 11px 15px;
+}
+.form-wrapper .form-banner .form-group input::placeholder {
+  font-weight: 300;
+}
+
+
+.img-banner-desc {
+  z-index: 1;
+  background: url("img/about-brochure.webp");
+  width: 55%;
+  height: 87%;
+  position: absolute;
+  left: 45%;
+  top: 13%;
+}
+
+
+
+/* descriptive area */
